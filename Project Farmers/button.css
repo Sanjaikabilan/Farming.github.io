@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+{
+margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image:url('bg.jpg');
+    background-size: cover;
+}
+
+.Farmers
+{
+    position: absolute;
+    left: 300px;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px;
+    color:rgb(253, 253, 253);
+    background:linear-gradient(-45deg, #23c8fa 0%, #25ffdb 100%);
+    border-radius: 1000px;
+    font-size: 50px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    overflow: hidden;}
+
+span
+{
+   position: absolute;
+   background: rgb(42, 27, 177);
+   transform: translate(-50%,-50%);
+   pointer-events: none;
+   border-radius: 50%;
+   animation: animate 0.31s linear;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        width: 0;
+        height: 0;
+        opacity: 0.2;;
+
+    }
+    
+    100%
+    {
+        width: 500px;
+        height: 500px;
+        opacity: 0.2;;
+
+    }
+}
+
+.Buyers
+{
+    position: absolute;
+    right: 300px;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px;
+    color:rgb(255, 255, 255);
+    background:linear-gradient(-45deg, #23c8fa 0%, #25ffdb 100%);
+    border-radius: 1000px;
+    font-size: 50px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+
+span
+{
+   position: absolute;
+   background:#d3ffe0;
+   transform: translate(-50%,-50%);
+   pointer-events: none;
+   border-radius: 50%;
+   animation: animate 0.31s linear;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        width: 0;
+        height: 0;
+        opacity:0.8;
+
+    }
+    
+    100%
+    {
+        width: 500px;
+        height: 500px;
+        opacity:0.8;
+
+    }
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+   
+    <title>
+     Farmers_buyers_button
+    </title>
+   <link rel="stylesheet" href="button.css">
+  </head> 
+  <body>
+     <a href="index.html"class="Farmers">Farmers</a>
+     <a href="index.html"class="Buyers">Buyers</a>
+   <script type="text/javascript">
+      const buttons = document.querySelectorAll('a');
+      buttons.forEach(btn => {
+        btn.addEventListener('mouseenter', function(e){
+
+          let x = e.clientX - e.target.offsetLet;
+          let y = e.clientY - e.target.offsetTop;
+
+          let ripples = document.createElement('span');
+         ripples.style.left = x +'px';
+         ripples.style.top = y +'px';
+         this.appendChild(ripples);
+
+         setTimeout(() =>{
+           ripples.remove()
+         }, 1000);
+        })
+      })  
+    </script>
+    <button class="bubbly-button">Click me!</button>
+    <script src="bubblybotton.js"></script>
+  </body>
+</html>
